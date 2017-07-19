@@ -21,9 +21,6 @@ body
 }
 
 
-#container
-{
-    overflow-x:hidden;}
 
 a
 {
@@ -35,6 +32,10 @@ a:hover
 {
     text-decoration-line: none;
 }
+#container
+{
+    overflow-x: hidden;
+}
 #topbar
 {
     height: 40px;
@@ -42,13 +43,33 @@ a:hover
 }
 #topbar ul li
 {
-    text-align: center;
+    text-align: right;
  display: inline-block;
     padding-left: 15px;
+    
 }
 #topbar ul li a i
 {
     color: #D3C650;
+}
+@media (max-width:768px)
+{
+   a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+} 
+    #topbar
+{
+    height: 50px;
+    background-color: #00ACEE;
+}#topbar ul li
+{
+    text-align: center;
+ display: inline-block;
+    padding-left: 5px;
+}
 }
 #header {
     margin-top:20px;
@@ -249,7 +270,9 @@ span
     
 }
 #section_1 .slider .slide img{
-    width: 100%;
+    width: 123%;
+    border:1px solid black ;
+    padding-left: 0px;
 }
 #section_2
 {
@@ -418,7 +441,7 @@ span
 {      content: "";
     position: absolute;
     height: 100%;
-        width: 67%;
+        width: 66%;
     left: 7%;
     top: 0px;
     background-color: rgba(0,0,0,0.5);
@@ -429,16 +452,22 @@ span
     
 }
 }
-@media(max-width:992px)
+@media(max-width:991px)
 {
+    .sec
+{
+    width: 100%;
+     margin-top: 13%;
+}
  
      .sec:after
 {      content: "";
     position: absolute;
-    height: 100%;
-         width: 68%;
-    left: 10%;
-    top: 0px;
+   height: 90%;
+    width: 67%;
+    left: 11%;
+    top: 10%;
+
     background-color: rgba(0,0,0,0.5);
     opacity: 0;
     overflow: hidden;
@@ -446,6 +475,17 @@ span
     transition: 1s;
     
 }
+    .sec:hover .name
+{
+    text-align: center;
+        transform: translateY(-62px);
+    z-index: 20;
+    transition: 2s;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    
+}
+
 }
 @media(max-width:767px)
 {
@@ -453,10 +493,10 @@ span
      .sec:after
 {      content: "";
     position: absolute;
-    height: 100%;
-      width: 69%;
+        height: 89%;
+    width: 69%;
     left: 12%;
-    top: 0px;
+    top: 11%
     background-color: rgba(0,0,0,0.5);
     opacity: 0;
     overflow: hidden;
@@ -471,11 +511,10 @@ span
      .sec:after
 {      content: "";
     position: absolute;
-    height: 100%;
-          width: 66%;
+        height: 90%;
+    width: 66%;
     left: 12%;
-    top: 0px;
-    background-color: rgba(0,0,0,0.5);
+    top: 10%;-color: rgba(0,0,0,0.5);
     opacity: 0;
     overflow: hidden;
     transform: translate(25px,0px);
@@ -490,10 +529,10 @@ span
      .sec:after
 {      content: "";
     position: absolute;
-    height: 100%;
-          width: 66%;
+        height: 90%;
+    width: 66%;
     left: 9%;
-    top: 0px;
+    top: 10%;
     background-color: rgba(0,0,0,0.5);
     opacity: 0;
     overflow: hidden;
@@ -582,15 +621,13 @@ span
       content: "";
     position: absolute;
     height: 100%;
-      width: 96%;
+      width: 95%;
     left: 14px;
     top: -2px;
     background-color: rgba(0,0,0,0.5);
     opacity: 0;
     overflow: hidden;
-    transition: 1s;
-
-    
+    transition: 1s; 
 }
 
  .icon_2 :hover:after
@@ -617,27 +654,48 @@ span
     transition: 1s;
     
 }
+/*.desc_2
+{
+    background-color: rgb(0,0,0);
+}*/
 
-@media(max-width:680px)
+@media(max-width:992px)
+{
+     .icon_2 :after
+{
+      content: "";
+    position: absolute;
+    height: 100%;
+        height: 100%;
+        width: 90%;
+    left: 5%;
+    top: 0px;
+    
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    overflow: hidden;
+    transition: 1s;
+    } 
+}
+@media(max-width:767px)
 {
  .icon_2 :after
 {
       content: "";
     position: absolute;
     height: 100%;
-         width: 94%;
-    left: 3%;
+        height: 100%;
+    width: 91%;
+    left: 5%;
     top: 0px;
+    
     background-color: rgba(0,0,0,0.5);
     opacity: 0;
     overflow: hidden;
     transition: 1s;
     }   
 }
-.desc_2
-{
-    background-color: rgb(0,0,0);
-}
+
 @media(max-width:400px)
 {
  .icon_2 :after
