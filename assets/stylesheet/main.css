@@ -1,0 +1,721 @@
+body
+{
+    margin: 0px;
+    overflow-x: hidden;
+}
+.left
+{
+    float: left;
+}
+
+.right
+{
+    float:right
+}
+
+.clearfix:both
+{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+
+
+a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+a:hover
+{
+    text-decoration-line: none;
+}
+#topbar
+{
+    height: 40px;
+    background-color: #00ACEE;
+}
+#topbar ul li
+{
+    text-align: center;
+ display: inline-block;
+    padding-left: 15px;
+}
+#topbar ul li a i
+{
+    color: #D3C650;
+}
+#header {
+    margin-top:20px;
+    background-color: white;
+}
+#header a
+{
+    color:black;
+     padding-left: 10px;
+
+}
+#header ul 
+{
+    list-style: none;
+    display:flex;
+   
+}
+#header ul a
+{
+    font-size: 20px;
+}
+#header i
+{
+    font-size: 30px;
+    
+    color:#FFCC2F;
+}
+span
+{
+    font-weight: bolder;
+    font-size:20px;
+}
+#main_nav ul li a:hover 
+{
+    color: red;
+}
+@media(max-width:790px)
+{
+    #header span
+    {
+        font-size: 15px;
+    }
+    #header i
+    {
+        font-size: 20px;
+    }
+    #header ul a
+    {
+        font-size: 10px;
+        font-weight: 700;
+    }
+    #header a
+    {padding-left: 5px;}
+}
+#banner img
+{
+    width: 100%;
+   
+}
+.item active
+{
+    position:relative;
+}
+#desc {
+    position: absolute;
+  bottom: 53%;
+  left: 10%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    
+}
+@media(max-width:776px)
+{
+    #desc {
+    position: absolute;
+  bottom: 33%;
+  left: 10%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+    #desc h2
+    {
+        font-size: 20px;
+    }
+    #dsec h2 a span
+    {
+        font-size: 20px;
+    }
+}
+@media (max-width:469px)
+{
+        #desc {
+    position: absolute;
+  bottom: 23%;
+  left: 10%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+    #desc h2
+    {
+        font-size: 15px;
+    }
+     #dsec h2 a  span
+    {
+        font-size: 15px;
+    }
+}
+
+#desc h2 span
+{
+  
+    border: 1px solid yellow;
+    color: white;
+    background-color: yellow;
+   
+
+}
+#desc h2 i
+{
+   padding-left: 20px;
+}
+#section_1 .row h1
+{
+       text-align: center;
+    font-weight: bold;
+}
+#section_1 .row h4
+{
+    text-align: center;
+    color:#02ADEE;
+}
+#section_1 .row p
+{
+    text-align: center;
+    color: #666666;
+    padding: 10px;
+    line-height: 30px;
+    font-size: 19px;
+        
+}
+#section_1 .slider
+{
+    width:200%;
+    overflow: hidden;
+    animation: slider_1 10s infinite linear alternate;
+    position: relative;
+    
+}
+@keyframes slider_1
+{
+    0%
+    {
+        left:0%;
+    }
+    15%
+    {
+        left:0%;
+    }
+    20%
+    {
+     left:-20%;
+    }
+    35%{
+        left:-20%;
+    }
+    40%
+    {
+        left: -40%;
+    }
+    55%
+    {
+        left: -40%;
+    }
+ 60%
+    {
+        left: -60%;
+    }
+    75%{
+        left: -60%;
+    }
+     80% {
+        left: -80%;
+    }
+    95% {left: -80%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+#section_1 .slide
+{
+    width:100%;
+   float: left;
+    overflow: hidden;
+    
+}
+#section_1 .slider .slide img{
+    width: 100%;
+}
+#section_2
+{
+    margin-top: 20px;
+    background-color: #1E2021;
+    
+}
+#section_2 .row
+{
+    margin:10px 20px;
+}
+#section_2 .row h1
+{
+       text-align: center;
+    font-weight: bold;
+}
+#section_2 .row h4
+{
+    text-align: center;
+    color:#02ADEE;}
+#section_2 .column{
+    width:100%;
+}
+#section_2 .row img
+{
+    width: 71%;
+    position: relative;
+}
+#section_2 .row .icon
+{
+    background-color: #00ACEE;
+    width:71%;
+    
+}
+#section_2 .row .icon h4
+{
+    color: black;
+    margin-top: 0px;
+}
+
+ #section_2 .overlay h3
+{
+        position: absolute;
+    top: 30%;
+    opacity: 0;
+    color: white;
+    z-index: 20;
+}
+@media(max-width:400px)
+{
+    #section_2 .row h1
+{
+       text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 5px;
+}
+    
+    #section_2 .row h4
+{
+       text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+    
+}
+.column:hover .overlay h3
+{
+       opacity: 1;
+    
+}
+/* .column:after
+{
+    content: "";
+    position: absolute;
+    height: 65%;
+      width: 63%;
+    left: 6%;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    overflow: hidden;
+  
+    transition: 1s;
+}
+ .column:hover:after {
+    top: 0%;
+    opacity: 1;
+
+   overflow: hidden;
+     
+}*/
+#section_3 {
+    background-color: white;
+    margin-top: 20px;
+    text-align: center;
+    width:100%;
+    
+}
+#section_3 h1
+{
+    font-weight: bold;
+    width: 100%;
+}
+#section_3 img
+{
+    width:75%;
+}
+#section_3 h4
+{
+    font-weight: bold;
+    color: #B9E8FA;
+    
+}
+.sec
+{
+    width: 100%;
+}
+
+ .sec:after
+{      content: "";
+    position: absolute;
+    height: 100%;
+         width: 68%;
+    left: 8%;  
+    
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    overflow: hidden;
+    transform: translate(25px,0px);
+    transition: 1s;
+    
+}
+.sec:hover:after
+{
+    opacity: 1;
+    overflow: hidden;
+}
+.name
+{
+    background-color: #FFC107;
+       width: 60%;
+        left: 19%;
+    position: absolute;
+    
+}
+.name h2
+{
+    font-size: 23px;
+}
+.sec:hover .name
+{
+    text-align: center;
+        transform: translateY(-62px);
+    z-index: 20;
+    transition: 2s;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    
+}
+@media(max-width:1100px)
+{
+ 
+     .sec:after
+{      content: "";
+    position: absolute;
+    height: 100%;
+        width: 67%;
+    left: 7%;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    overflow: hidden;
+    transform: translate(25px,0px);
+    transition: 1s;
+    
+}
+}
+@media(max-width:992px)
+{
+ 
+     .sec:after
+{      content: "";
+    position: absolute;
+    height: 100%;
+         width: 68%;
+    left: 10%;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    overflow: hidden;
+    transform: translate(25px,0px);
+    transition: 1s;
+    
+}
+}
+@media(max-width:767px)
+{
+ 
+     .sec:after
+{      content: "";
+    position: absolute;
+    height: 100%;
+      width: 69%;
+    left: 12%;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    overflow: hidden;
+    transform: translate(25px,0px);
+    transition: 1s;
+    
+}
+}
+@media(max-width:532px)
+{
+ 
+     .sec:after
+{      content: "";
+    position: absolute;
+    height: 100%;
+          width: 66%;
+    left: 12%;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    overflow: hidden;
+    transform: translate(25px,0px);
+    transition: 1s;
+    
+}
+    
+}
+@media(max-width:400px)
+{
+ 
+     .sec:after
+{      content: "";
+    position: absolute;
+    height: 100%;
+          width: 66%;
+    left: 9%;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    overflow: hidden;
+    transform: translate(25px,0px);
+    transition: 1s;
+    
+}
+    
+}
+
+
+
+#section_4 
+{    margin-top: 20%;
+    height: 30%;
+    width: 100%;
+    background-image: url(../images/banner2.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+   
+    padding: 70px;
+}
+#section_4 h2,h4
+{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+#section_5
+{
+    margin-top: 10px;
+ 
+}
+#section_5 h1
+{
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+#section_5 h4
+{
+    font-weight: bold;
+    color: #B9E8FA;
+     text-align: center;
+}
+.desc_1
+{
+    margin-top: 30%;
+    background-color: #151414;
+    padding: 20px;
+    
+  
+}
+.desc_1 h2
+{
+    text-align: center;
+    color: white;
+}
+
+ #section_5 .desc_1 h4
+{
+    text-align: center;
+    color: white;
+}
+
+.desc_1:after
+{
+        content: "";
+    width: 265px;
+    background: #ffcc2f;
+    height: 4px;
+    position: absolute;
+        top: 20em;
+    right: 10em;
+    z-index: 999;
+}
+.icon_2 img
+{
+    width:100%;
+   
+}
+
+.icon_2 :after
+{
+      content: "";
+    position: absolute;
+    height: 100%;
+      width: 96%;
+    left: 14px;
+    top: -2px;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    overflow: hidden;
+    transition: 1s;
+
+    
+}
+
+ .icon_2 :hover:after
+{
+    opacity: 1;
+    overflow: hidden;
+}
+    
+ .desc_2 h2
+{
+      width:100%;
+    top: 45%;
+    position: absolute;
+    text-align: center;
+    
+    color: white;
+    opacity: 0;
+}
+.icon_2 :hover  h2
+{ 
+    opacity: 1;
+    z-index: 60;
+
+    transition: 1s;
+    
+}
+
+@media(max-width:680px)
+{
+ .icon_2 :after
+{
+      content: "";
+    position: absolute;
+    height: 100%;
+         width: 94%;
+    left: 3%;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    overflow: hidden;
+    transition: 1s;
+    }   
+}
+.desc_2
+{
+    background-color: rgb(0,0,0);
+}
+@media(max-width:400px)
+{
+ .icon_2 :after
+{
+      content: "";
+    position: absolute;
+    height: 100%;
+      width: 91%;
+    left: 14px;
+    top: -2px;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    overflow: hidden;
+    transition: 1s;
+    }   
+}
+#footer
+{
+    background-color: #000000;
+    margin-top: 20px;
+    
+}
+.foot_head h2
+{
+ border-bottom: 1px solid #00ACEE;   
+}
+.foot_desc
+{
+    color: grey;
+    padding-bottom: 30px;
+    
+}
+.face i
+{
+    background-color: #43609C;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50% 50%;
+}
+.twit i
+{
+    background-color:  #1DA1F2;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50% 50%;
+}
+.inst i
+{
+    background-color:#EA4C89;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 80% 80%;
+}
+.foot_desc ul
+{
+    list-style: none;
+}
+.foot_desc ul li a i
+{
+    color: yellow;
+}
+.foot_desc a
+{
+    color: grey;
+    font-size: 15px;
+    text-decoration: none;
+}
+.textbox input
+{
+   background-color:#1B1B1B;
+    width:70%;
+    height: 40px;
+}
+.textbox button
+{
+    background-color: #FFCC2F;
+    color: white;
+}
