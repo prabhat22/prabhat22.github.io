@@ -21,6 +21,9 @@ body
 }
 
 
+#container
+{
+    overflow-x:hidden;}
 
 a
 {
